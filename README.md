@@ -1,6 +1,6 @@
 # 💖 Valentine's Day - Surpreenda quem você ama!
 
-Este projeto é uma página romântica feita em HTML, CSS e JavaScript, perfeita para surpreender seu namorado(a) ou crush no Dia dos Namorados! Com uma interface fofa, animações e uma pitada de humor, você pode compartilhar um link especial e arrancar sorrisos de quem você ama. 
+Este projeto é uma página romântica feita em HTML, CSS e JavaScript, perfeita para surpreender seu namorado(a) ou crush no Dia dos Namorados! Com uma interface fofa, animações e uma pitada de humor, você pode compartilhar um link especial e arrancar sorrisos de quem você ama.
 
 ## ✨ Funcionalidades
 
@@ -9,11 +9,12 @@ Este projeto é uma página romântica feita em HTML, CSS e JavaScript, perfeita
 - **Pergunta de declaração:** "Você me ama?" com botões de resposta.
 - **Botão "Não!" fujão:** Tenta clicar no "Não"? Ele foge! Só resta dizer "Sim!" 😍
 - **Surpresa ao clicar em "Sim!":** Um link especial para um vídeo romântico.
+- **Totalmente responsivo:** Funciona perfeitamente em celulares, tablets e computadores!
 
 ## 🎁 Como usar
 
 1. **Clone ou baixe este repositório.**
-2. Abra o arquivo `index.html` no seu navegador.
+2. Abra o arquivo `index.html` no seu navegador (desktop ou mobile).
 3. Compartilhe o link da página com seu amor ou personalize a mensagem para deixar ainda mais especial!
 
 ## 🛠️ Personalização
@@ -27,6 +28,10 @@ Este projeto é uma página romântica feita em HTML, CSS e JavaScript, perfeita
 - Use criatividade! Pequenos gestos digitais podem criar grandes memórias.
 - Experimente adicionar novas interações, como corações animados, trilha sonora ou até um mini-jogo.
 - Compartilhe sua versão e inspire outros devs a criarem presentes únicos para quem amam.
+
+## 📱 Compatibilidade Mobile
+
+O projeto foi pensado para funcionar perfeitamente em dispositivos móveis. O painel, botões e animações se adaptam ao tamanho da tela, garantindo uma experiência fofa e divertida tanto no celular quanto no computador.
 
 ## 📸 Preview
 
