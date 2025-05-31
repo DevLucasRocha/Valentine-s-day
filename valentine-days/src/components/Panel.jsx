@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import LoveButton from './LoveButton';
-import './Painel.css';
+import './Panel.css';
 
 function Panel() {
   const naoBtn = useRef();
