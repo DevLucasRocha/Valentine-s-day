@@ -27,7 +27,7 @@
     margin-top: 20px;  
 }
 
-.love-button, #sim, #nao {
+.love-button {
     height: 40px;
     width: 60px;
     font-size: 1rem;
@@ -37,6 +37,15 @@
     border-radius: 10px;
     color: white;
     transition: left 0.2s, top 0.2s;
+}
+
+.love-button#sim {
+    position: relative;
+    z-index: 1;
+}
+
+.love-button#nao {
+    z-index: 2;
 }
 
 @media (max-width: 600px) {

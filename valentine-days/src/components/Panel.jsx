@@ -14,7 +14,7 @@ function Panel() {
     const alturaPainel = painel.offsetHeight;
 
     const maxX = larguraPainel - botaoNao.offsetWidth;
-    const maxY = alturaPainel - botaoNao.offsetHeight;
+    const maxY = (alturaPainel - botaoNao.offsetHeight) * 0.5; // não foge muito para baixo
 
     const aleatorioX = Math.floor(Math.random() * maxX);
     const aleatorioY = Math.floor(Math.random() * maxY);
