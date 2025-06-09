@@ -14,10 +14,10 @@ function Panel() {
     const alturaPainel = painel.offsetHeight;
 
     const maxX = larguraPainel - botaoNao.offsetWidth;
-    const maxY = alturaPainel - botaoNao.offsetHeight - 20; // deixa margem inferior
+    const maxY = (alturaPainel - botaoNao.offsetHeight) * 0.4; // deixa margem inferior
 
     const aleatorioX = Math.floor(Math.random() * maxX);
-    const aleatorioY = Math.floor(Math.random() * (maxY * 0.7)); // só na parte de cima
+    const aleatorioY = Math.floor(Math.random() * maxY); // só na parte de cima
 
     botaoNao.style.left = aleatorioX + "px";
     botaoNao.style.top = aleatorioY + "px";
