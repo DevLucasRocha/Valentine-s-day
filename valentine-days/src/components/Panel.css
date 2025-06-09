@@ -39,10 +39,6 @@
     transition: left 0.2s, top 0.2s;
 }
 
-a {
-    text-decoration: none;
-}
-
 @media (max-width: 600px) {
     .painel {
         width: 98vw;
