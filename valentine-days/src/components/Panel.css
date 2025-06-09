@@ -25,13 +25,16 @@
     width: 100%;
     min-height: 70px;
     margin-top: 20px;  
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .love-button {
     height: 40px;
-    width: 60px;
-    font-size: 1rem;
-    margin: 10px 5px 0 5px;
+    width: 80px;
+    font-size: 1.1rem;
+    margin: 0 10px;
     background-color: red;
     border: 2px solid white;
     border-radius: 10px;
@@ -72,10 +75,14 @@
 .love-button#sim {
     position: relative;
     z-index: 1;
+    animation: heartbeat 1s infinite;
 }
 
 .love-button#nao {
+    position: absolute;
     z-index: 2;
+    left: 65%;
+    top: 10%;
 }
 
 @media (max-width: 600px) {
