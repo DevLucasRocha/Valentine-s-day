@@ -8,7 +8,7 @@ const LoveButton = forwardRef(({ tipo, children, onMouseOver}, ref) => {
     ref: tipo === 'nao' ? ref : null,
     onMouseOver: tipo === 'nao' ? onMouseOver : undefined,
     style: tipo === 'nao'
-      ? { position: 'absolute', left: '60%', top: '70%' }
+      ? { position: 'absolute', left: '60%', top: '10%' }
       : {},
     type: 'button'
   };
