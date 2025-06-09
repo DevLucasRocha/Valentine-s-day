@@ -35,9 +35,12 @@ function Panel() {
       />
       <h2>Você me ama?</h2>
       <div className="botoes">
-        <a href="https://www.youtube.com/watch?v=oRvND-r57Us">
-          <LoveButton tipo="sim">Sim!</LoveButton>
-        </a>
+         <LoveButton
+          tipo="sim"
+          onClick={() => window.open("https://www.youtube.com/watch?v=oRvND-r57Us", "_blank")}
+        >
+          Sim!
+        </LoveButton>
         <LoveButton
           tipo="nao"
           ref={naoBtn}

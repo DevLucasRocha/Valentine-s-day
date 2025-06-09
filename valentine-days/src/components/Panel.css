@@ -23,12 +23,8 @@
 .botoes {
     position: relative;
     width: 100%;
-    min-height: 70px; /*Espaço entre os botões*/
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    min-height: 70px;
+    margin-top: 20px;  
 }
 
 .love-button, #sim, #nao {
