@@ -58,6 +58,17 @@
   }
 }
 
+.love-button:focus {
+    outline: none;
+}
+.love-button:active {
+    transform: scale(0.9);
+}
+
+.love-button:hover {
+    animation: heartbeat 0.6s infinite;
+}
+
 .love-button#sim {
     position: relative;
     z-index: 1;
