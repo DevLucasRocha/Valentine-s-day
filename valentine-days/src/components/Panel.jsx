@@ -40,7 +40,7 @@ function Panel() {
         </a>
         <LoveButton
           tipo="nao"
-          refBtn={naoBtn}
+          ref={naoBtn}
           onMouseOver={fuja}
         >
           Não!
