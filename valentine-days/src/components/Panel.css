@@ -3,8 +3,8 @@
     background-color: white;
     width: 90vw;
     max-width: 500px;
-    height: 90vw;
-    max-height: 500px;
+    min-height: 600px; 
+    height: auto;      
     border-radius: 20px;
     text-align: center;
     padding-top: 30px;
