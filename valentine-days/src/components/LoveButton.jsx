@@ -4,7 +4,7 @@ import React, { forwardRef } from 'react';
 const LoveButton = forwardRef(({ tipo, children, onMouseOver}, ref) => {
   const props = {
     id: tipo,
-    className: 'love-button',
+    className: 'love-button', // sempre aplica a classe
     ref: tipo === 'nao' ? ref : null,
     onMouseOver: tipo === 'nao' ? onMouseOver : undefined,
     style: tipo === 'nao'
