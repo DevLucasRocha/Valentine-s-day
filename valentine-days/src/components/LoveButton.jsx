@@ -1,15 +1,15 @@
 import React, { forwardRef } from 'react';
 
-// ref é usado para o botão "Não!" (para seu amor não negar você)
-const LoveButton = forwardRef(({ tipo, children, onMouseOver}, ref) => {
+const LoveButton = forwardRef(({ tipo, children, onMouseOver, onClick }, ref) => {
   const props = {
     id: tipo,
-    className: 'love-button', // sempre aplica a classe
+    className: 'love-button',
     ref: tipo === 'nao' ? ref : null,
     onMouseOver: tipo === 'nao' ? onMouseOver : undefined,
+    onClick,
     style: tipo === 'nao'
-      ? { position: 'absolute', left: '60%', top: '10%' }
-      : {},
+      ? { position: 'absolute', left: '65%', top: '10%' }
+      : { position: 'relative', left: '0', top: '0' },
     type: 'button'
   };
 

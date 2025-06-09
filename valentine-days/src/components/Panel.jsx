@@ -14,10 +14,10 @@ function Panel() {
     const alturaPainel = painel.offsetHeight;
 
     const maxX = larguraPainel - botaoNao.offsetWidth;
-    const maxY = (alturaPainel - botaoNao.offsetHeight) * 0.5; // não foge muito para baixo
+    const maxY = alturaPainel - botaoNao.offsetHeight - 20; // deixa margem inferior
 
     const aleatorioX = Math.floor(Math.random() * maxX);
-    const aleatorioY = Math.floor(Math.random() * maxY);
+    const aleatorioY = Math.floor(Math.random() * (maxY * 0.7)); // só na parte de cima
 
     botaoNao.style.left = aleatorioX + "px";
     botaoNao.style.top = aleatorioY + "px";
@@ -35,7 +35,7 @@ function Panel() {
       />
       <h2>Você me ama?</h2>
       <div className="botoes">
-         <LoveButton
+        <LoveButton
           tipo="sim"
           onClick={() => window.open("https://www.youtube.com/watch?v=oRvND-r57Us", "_blank")}
         >
