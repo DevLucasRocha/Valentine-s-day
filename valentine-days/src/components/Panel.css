@@ -72,6 +72,8 @@
 
 .love-button#sim {
     position: relative;
+    left: 30px; 
+    top: 10px; 
     z-index: 1;
     animation: heartbeat 1s infinite;
 }
