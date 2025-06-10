@@ -76,6 +76,16 @@
     animation: heartbeat 1s infinite;
 }
 
+.love-button.buff {
+    animation: buffOut 0.2s forwards;
+}
+
+@keyframes buffOut {
+    to {
+        opacity: 0;
+        transform: scale(0.1) rotate(20deg);
+    }
+}
 .love-button#nao {
     position: absolute;
     z-index: 2;
@@ -96,3 +106,4 @@
         font-size: 1.1em;
     }
 }
+
