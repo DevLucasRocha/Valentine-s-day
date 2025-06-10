@@ -10,6 +10,10 @@ function Panel() {
     const botaoNao = naoBtn.current;
     const painel = painelRef.current;
 
+    botaoNao.style.position = "absolute";
+    botaoNao.style.transition = "left 0.5s, top 0.5s";
+    botaoNao.style.zIndex = "1000"; // garantir que o botão fique acima dos outros elementos
+
     const larguraPainel = painel.offsetWidth;
     const alturaPainel = painel.offsetHeight;
 
