@@ -91,7 +91,7 @@
 .love-button#nao {
     position: absolute;
     z-index: 2;
-    right: 0px;
+    right: 20px;
     top: 5px;
 }
 
@@ -114,6 +114,14 @@
         font-size: 1em;
         padding: 8px 0;
         margin: 0 4vw;
+    }
+    .love-button#sim {
+        left: -40px;
+        top: 8px;
+    }
+    .love-button#nao {
+        right: 4vw;
+        top: 8px;
     }
     .botoes {
         min-height: 60px;
