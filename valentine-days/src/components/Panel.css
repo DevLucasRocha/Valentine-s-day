@@ -72,8 +72,8 @@
 
 .love-button#sim {
     position: relative;
-    left: -80px;
-    top: 10px; 
+    left: -70px;
+    top: 20px; 
     z-index: 1;
     animation: heartbeat 1s infinite;
 }
@@ -91,8 +91,8 @@
 .love-button#nao {
     position: absolute;
     z-index: 2;
-    left: 65%;
-    top: 10%;
+    left: 70px;
+    top: 20px;
 }
 
 @media (max-width: 600px) {
