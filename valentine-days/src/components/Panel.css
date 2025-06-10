@@ -91,7 +91,7 @@
 .love-button#nao {
     position: absolute;
     z-index: 2;
-    left: -70px;
+    right: -70px;
     top: 5px;
 }
 
