@@ -21,14 +21,11 @@
 }
 
 .botoes {
-    position: relative;
+     position: relative;
     width: 100%;
     min-height: 70px;
-    margin-top: 20px;  
-    justify-content: space-between; 
-    align-items: center;
-    display: flex;
-    flex-direction: row;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .love-button {
