@@ -29,7 +29,7 @@ function Panel() {
       <div className="botoes">
         <LoveButton
           tipo="sim"
-          onClick={() => window.open("https://www.youtube.com/watch?v=oRvND-r57Us", "_blank")}
+          onClick={() => window.open("https://drive.google.com/file/d/1NOKthklQoM_P-HmsE4rNNqVflDI3gpJa/view?usp=sharing", "_blank")}
         >
           Sim!
         </LoveButton>
