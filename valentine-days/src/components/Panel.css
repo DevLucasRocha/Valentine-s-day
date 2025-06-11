@@ -7,7 +7,7 @@
     height: auto;      
     border-radius: 20px;
     text-align: center;
-    padding-top: 30px;
+    padding: 30px 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
     box-sizing: border-box;
@@ -42,6 +42,8 @@
     color: white;
     transition: transform 0.2s;
     cursor: pointer;
+    padding: 0 15px;
+    white-space: nowrap;
 }
 
 @keyframes heartbeat {
@@ -104,36 +106,69 @@
 
 @media (max-width: 600px) {
     .painel {
-        width: 96vw;
-        max-width: 99vw;
-        min-width: 0;
+        width: 92vw;
+        max-width: none;
+        min-height: 450px;
         margin: 4vw auto;
-        padding-top: 24px;
-        padding-left: 2vw;
-        padding-right: 2vw;
-        min-height: 350px;
-        box-sizing: border-box;
+        padding: 20px 15px;
     }
+
+    .painel img {
+        max-width: 90%;
+    }
+
+    .painel h1 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .painel h2 {
+        font-size: 1.2rem;
+        margin: 15px 0;
+    }
+
+    .botoes {
+        min-height: 60px;
+        margin-top: 15px;
+        gap: 15px;
+    }
+
     .love-button {
-        width: 38vw;
-        max-width: 100px;
-        min-width: 70px;
-        font-size: 1em;
-        padding: 8px 0;
+        height: 45px;
+        width: 120px;
+        font-size: 1rem;
+        padding: 0 10px;
     }
+
     .love-button#sim {
         position: relative;
         left: 0;
         top: 0;
     }
+
     .love-button#nao {
         position: relative;
         right: 0;
         top: 0;
     }
-    .botoes {
-        min-height: 60px;
-        margin-top: 16px;
-        gap: 10px;
+}
+
+@media (max-width: 360px) {
+    .painel {
+        width: 95vw;
+        padding: 15px 10px;
+    }
+
+    .painel h1 {
+        font-size: 1.3rem;
+    }
+
+    .painel h2 {
+        font-size: 1.1rem;
+    }
+
+    .love-button {
+        width: 100px;
+        font-size: 0.9rem;
     }
 }
