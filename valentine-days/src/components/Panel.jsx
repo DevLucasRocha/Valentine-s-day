@@ -12,9 +12,6 @@ function Panel() {
     setTimeout(() => {
       setNaoVisible(false);
       setBuff(false);
-      setTimeout(() => {
-        setNaoVisible(true);
-      }, 200);
     }, 200);
   }
 
