@@ -4,31 +4,8 @@ import './Panel.css';
 
 function Panel() {
   const naoBtn = useRef();
-  const painelRef = useRef();
   const [naoVisible, setNaoVisible] = useState(true);
   const [buff, setBuff] = useState(false);
-
-  function fuja() {
-    if (!naoVisible) return;
-    const botaoNao = naoBtn.current;
-    const painel = painelRef.current;
-
-    botaoNao.style.position = "absolute";
-    botaoNao.style.transition = "left 0.5s, top 0.5s";
-    botaoNao.style.zIndex = "1000";
-
-    const larguraPainel = painel.offsetWidth;
-    const alturaPainel = painel.offsetHeight;
-
-    const maxX = larguraPainel - botaoNao.offsetWidth;
-    const maxY = (alturaPainel - botaoNao.offsetHeight) * 0.4;
-
-    const aleatorioX = Math.floor(Math.random() * maxX);
-    const aleatorioY = Math.floor(Math.random() * maxY);
-
-    botaoNao.style.left = aleatorioX + "px";
-    botaoNao.style.top = aleatorioY + "px";
-  }
 
   function buffEDesaparece() {
     setBuff(true);
@@ -36,15 +13,13 @@ function Panel() {
       setNaoVisible(false);
       setBuff(false);
       setTimeout(() => {
-        // Após sumir, reposiciona e reaparece
-        fuja();
         setNaoVisible(true);
-      }, 200); // tempo para reaparecer
-    }, 200); // tempo da animação de sumir
+      }, 200);
+    }, 200);
   }
 
   return (
-    <div className="painel" ref={painelRef}>
+    <div className="painel">
       <h1>
         Feliz dia dos namorados<br />
         Amor da minha vida!
@@ -65,7 +40,6 @@ function Panel() {
           <LoveButton
             tipo="nao"
             ref={naoBtn}
-            onMouseOver={fuja}
             onClick={buffEDesaparece}
             className={buff ? "buff" : ""}
           >
